@@ -50,9 +50,8 @@ int main(int c,char**v){
 			cpu_time+=bleh;
 		}
 	 }
-	 printf("%ld\n", cpu_time);
 	 double timeSeconds = (double)cpu_time / sysconf(_SC_CLK_TCK);
-	 printf("CPU time: %.9f\n", timeSeconds);
+	 printf("CPU time: %ld %.3f\n", cpu_time, timeSeconds);
 	 
 	 fclose(statFile);
  }
